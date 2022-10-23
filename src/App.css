@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+.App{
+    /* background-color: black; */
+    
+    text-align: center;
+    background-color: rgb(245, 241, 241);
+}
+.app-header{
+    background-color: rgb(243, 242, 242);
+    /* min-width: 100vh; */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: rgb(5, 5, 5);
+    border-collapse: collapse;
+    
+}
+.cellInput{
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    font-size: 26px;
+    margin: 2px;
+    border-radius: 20%;
+    border: 3px solid white;
+    /* border-collapse: collapse; */
+    color: rgb(71, 57, 57);
+    /* background-color: aqua; */
+    /* box-shadow: rgb(243, 242, 242,233); */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+table{
+    /* border: 1px solid rgb(158, 157, 157);
+     */
+     border-collapse:collapse ;
+     border: 2px solid gray;
+     background-color: orange;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+td{
+    padding: 0;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.buttonContainer{
+    margin-top: 23px;
+    /* padding: 4px;
+    align-items: stretch; */
 }
-
-.App-link {
-  color: #61dafb;
+.solveButton{
+    background-color: rgb(14, 241, 14);
+    font-weight: bold;
+    font-size: medium;
+    padding: 10px 20px;
+    /* margin: 10px 10px; */
+    border-radius: 16px;
+    border: none;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.checkButton{
+    background-color: rgb(220, 241, 100);
+    font-weight: bold;
+    font-size: medium;
+    padding: 10px 20px;
+    /* margin: 10px 10px; */
+    border-radius: 16px;
+    border: none;
+}
+.resetButton{
+    background-color: rgb(241, 59, 14);
+    font-weight: bold;
+    font-size: medium;
+    padding: 10px 20px;
+    margin: 15px 20px;
+    border-radius: 16px;
+    border: none;
+}
+.trow{
+    border-bottom: 4px solid black;
+    border-radius: 14px;
+}
+.tcol{
+    border-right: 4px solid black;
 }
